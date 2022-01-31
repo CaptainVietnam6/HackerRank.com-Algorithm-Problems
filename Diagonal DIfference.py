@@ -5,7 +5,6 @@ import os
 import random
 import re
 import sys
-import math
 
 #
 # Complete the 'diagonalDifference' function below.
@@ -17,9 +16,9 @@ import math
 def diagonalDifference(arr):
     # Write your code here
     elements_num = len(arr)
-    right_down_diagonal = int(elements_num.sqrt() + 1)
-    left_down_diagonal = int(elements_num.sqrt() - 2)
-    values_to_add = int(elements_num.sqrt())
+    right_down_diagonal = int((elements_num).math.sqrt() + 1)
+    left_down_diagonal = int((elements_num).math.sqrt() - 2)
+    values_to_add = int(elements_num).math.sqrt()
     diagonal_a = arr[0]
     diagonal_b = arr[values_to_add]
     
@@ -32,7 +31,7 @@ def diagonalDifference(arr):
     difference = int(diagonal_a - diagonal_b).abs()
     return difference
     
-    
+
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
